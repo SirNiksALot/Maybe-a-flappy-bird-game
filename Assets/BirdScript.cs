@@ -4,7 +4,7 @@ public class BirdScript : MonoBehaviour
 {
 
     public Rigidbody2D myRigidbody;
-    public float flaptStrength;
+    public float flapStrength = 20;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +18,7 @@ public class BirdScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody.linearVelocity = Vector2.up * flaptStrength; // shorthand for Vector (0,1) 
+            myRigidbody.linearVelocity = Vector2.up * flapStrength; // shorthand for Vector (0,1) 
         }
         
     }

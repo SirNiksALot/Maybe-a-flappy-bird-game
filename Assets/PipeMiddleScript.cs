@@ -5,11 +5,18 @@ public class PipeMiddleScript : MonoBehaviour
 {
     public LogicScript logic;
     public int scoreIncrement = 1;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        
+        if (logic)
+        {
+            Debug.Log("LogicScript Object found !");
+
+        }
+
     }
 
     // Update is called once per frame
@@ -20,6 +27,7 @@ public class PipeMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Pipe Avoided ! Yay !");
         logic.add_score(scoreIncrement);
     }
 }
