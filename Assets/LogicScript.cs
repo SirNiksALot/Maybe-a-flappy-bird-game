@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class LogicScript : MonoBehaviour
 {
@@ -13,4 +15,13 @@ public class LogicScript : MonoBehaviour
         playerScore = playerScore + scoreToAdd;
         scoreText.text = playerScore.ToString();
     }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+
+
+
 }

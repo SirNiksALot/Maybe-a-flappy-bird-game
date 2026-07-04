@@ -70,10 +70,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.33, y: 21.87543}
+    newSize: {x: 5.33, y: 21.87543}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -104,8 +104,7 @@ GameObject:
   - component: {fileID: 2761944112156097547}
   - component: {fileID: 5782587445588311013}
   - component: {fileID: 8471816656131809537}
-  - component: {fileID: 9052129698998292846}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Top Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,20 +231,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.33, y: 21.87543}
   m_EdgeRadius: 0
---- !u!114 &9052129698998292846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4401834962712527460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5da5b73060c9f34eac4e092392f3762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  moveSpeed: 5
-  deadZone: -45
 --- !u!1 &6443672204206550753
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,8 +242,7 @@ GameObject:
   - component: {fileID: 3937047899534244488}
   - component: {fileID: 3896668153000964623}
   - component: {fileID: 332881309058986024}
-  - component: {fileID: 6418749424322877680}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bottom Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,20 +369,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.33, y: 21.87543}
   m_EdgeRadius: 0
---- !u!114 &6418749424322877680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6443672204206550753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5da5b73060c9f34eac4e092392f3762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  moveSpeed: 5
-  deadZone: -45
 --- !u!1 &8743013529607600990
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +378,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8952946741564603042}
-  m_Layer: 0
+  - component: {fileID: 4004634665788525228}
+  m_Layer: 3
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,3 +404,17 @@ Transform:
   - {fileID: 73863502118350506}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4004634665788525228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8743013529607600990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5da5b73060c9f34eac4e092392f3762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  moveSpeed: 5
+  deadZone: -45

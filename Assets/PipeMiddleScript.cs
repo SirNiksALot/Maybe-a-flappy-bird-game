@@ -27,7 +27,11 @@ public class PipeMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Pipe Avoided ! Yay !");
-        logic.add_score(scoreIncrement);
+        if (collision.gameObject.layer == 3)
+        {
+            Debug.Log("Pipe Avoided ! Yay !");
+            logic.add_score(scoreIncrement);
+
+        }
     }
 }
