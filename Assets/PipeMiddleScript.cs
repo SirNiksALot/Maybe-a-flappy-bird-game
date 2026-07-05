@@ -13,7 +13,7 @@ public class PipeMiddleScript : MonoBehaviour
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         if (logic)
         {
-            Debug.Log("LogicScript Object found !");
+            Debug.Log("LogicScript Object found by PipeMiddleScript!");
 
         }
 

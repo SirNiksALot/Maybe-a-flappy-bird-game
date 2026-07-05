@@ -7,6 +7,7 @@ public class LogicScript : MonoBehaviour
 {
     public int playerScore = 10;
     public Text scoreText;
+    public GameObject gameOverScreen;
 
 
     //[ContextMenu("Increase Score")] // this lets this function be accessible via the unity hub UI's context menu . ( HOW does this thing work , what is this syntax even ?? ) 
@@ -22,6 +23,10 @@ public class LogicScript : MonoBehaviour
 
     }
 
+    public void gameOver()
+    {
+        gameOverScreen.SetActive(true);
+    }
 
 
 }

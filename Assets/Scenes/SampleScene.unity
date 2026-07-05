@@ -576,6 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LogicScript
   playerScore: 0
   scoreText: {fileID: 228568756}
+  gameOverScreen: {fileID: 1274042055}
 --- !u!4 &769695225
 Transform:
   m_ObjectHideFlags: 0
@@ -710,7 +711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1274042056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   myRigidbody: {fileID: 1676277599}
   flapStrength: 20
+  logic: {fileID: 0}
+  bird: {fileID: 1676277595}
 --- !u!1 &1704705961
 GameObject:
   m_ObjectHideFlags: 0
